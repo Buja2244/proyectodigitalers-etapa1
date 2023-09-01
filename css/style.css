@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+
+
+
+.body {
+    background-image: linear-gradient(0deg, rgba(227,226,245,1) 0%, rgba(174,174,194,1) 50%, rgba(227,226,245,1) 100%);
+  }
+
+.navbar {
+    background-image: url("/public/img/dana-luig-u5dCAaQ6JsA-unsplash.webp");
+    background-size: cover;
+
+    /* Workaround for some mobile browsers */
+    min-height: 100%;
+}
+
+.navbar-brand{
+    font-size: 40px;
+    font-family: 'Black Ops One', cursive;
+}

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <title>Proyecto Integrador - Etapa 1</title>
   </head>
   <body>
@@ -10,97 +11,192 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Tienda EIT</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+          <a class="navbar-brand text-white" href="index.html">CODESHOP</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                <a class="nav-link active text-white" aria-current="page" href="/pages/contacto.html">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                <a class="nav-link text-white" href="/pages/nosotros.html">Nosotros</a>
               </li>
             </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+              <button class="btn btn-outline-secondary me-3 text-white" type="submit">Buscar</button>
+            </form>
+            <div class="d-flex">
+              <a href="pages/carrito.html" class="text-reset me-3">
+                <span style="color: whitesmoke;">
+                  <i class="fa-solid fa-cart-shopping fa-xl fa-beat" style="--fa-animation-duration: 2s;"></i>
+                </span>
+              </a>
+            </div>
           </div>
-        </div>
+
       </nav>
+
     </header>
+    <!-- Carrusel de marcas -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/img/banner-motorola.webp" class="d-block w-100" alt="Banner Motorola">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/banner-lg.webp" class="d-block w-100" alt="Banner LG">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/banner-asus.webp" class="d-block w-100" alt="Banner Asus">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
     <main class="container">
       <section class="row">
-        <!-- corousel -->
       </section>
       <section class="row my-5">
-        
+        <!-- Celulares Motorola -->
+        <!-- Elemento 1 -->
         <div class="card col-3 m-3 shadow-sm">
-          <img src="/img/acer.jpg" class="card-img-top" alt="...">
+          <img src="/img/Motorola-E13.webp" class="card-img-top" alt="Smartphone Motorola E13">
           <div class="card-body">
-            <h5 class="card-title">ACER</h5>
+            <h5 class="card-title">Smartphone Motorola Moto E13 64GB</h5>
             <ul class="list-unstyled mt-3 mb-4">
-              <li class="list-group-item text-uppercase">Color</li>
-              <li class="list-group-item">Caracteristicas</li>
+              <li class="list-group-item">Color: Verde</li>
+              <li class="list-group-item">Ram: 4GB</li>
+              <li class="list-group-item">Precio</li>
+            </ul>
+            <a href="#" class="btn btn-primary">Comprar</a> 
+          </div>
+        </div>
+        <!-- Elemento 2 -->
+        <div class="card col-3 m-3 shadow-sm">
+          <img src="/img/Motorola-G42.webp" class="card-img-top" alt="Smartphone Motorola Moto G42">
+          <div class="card-body">
+            <h5 class="card-title">Smartphone Motorola Moto G42 128GB</h5>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li class="list-group-item">Color: Azul</li>
+              <li class="list-group-item">Ram: 4GB</li>
               <li class="list-group-item">Precio</li>
             </ul>
             <a href="#" class="btn btn-primary">Comprar</a>
           </div>
-        </div> <!-- .card -->
-
+        </div>
+        <!-- Elemento 3 -->
         <div class="card col-3 m-3 shadow-sm">
-          <img src="/img/advance.jpg" class="card-img-top" alt="...">
+          <img src="/img/Motorola-Edge40.webp" class="card-img-top" alt="Smartphone Motorola Moto Edge 40">
           <div class="card-body">
-            <h5 class="card-title">Advance</h5>
+            <h5 class="card-title">Smartphone Motorola Moto Edge 40 5G 256GB</h5>
             <ul class="list-unstyled mt-3 mb-4">
-              <li class="list-group-item text-uppercase">Color</li>
-              <li class="list-group-item">Caracteristicas</li>
+              <li class="list-group-item">Color: Negro</li>
+              <li class="list-group-item">Ram: 8GB</li>
               <li class="list-group-item">Precio</li>
             </ul>
             <a href="#" class="btn btn-primary">Comprar</a>
           </div>
-        </div> <!-- .card -->
+        </div>
 
+        <hr>
+        <!-- Celulares LG -->
+        <!-- Elemento 1 -->
         <div class="card col-3 m-3 shadow-sm">
-          <img src="/img/apple.jpg" class="card-img-top" alt="...">
+          <img src="/img/LG-K22plus.webp" class="card-img-top" alt="Celular LG K22+">
           <div class="card-body">
-            <h5 class="card-title">Apple</h5>
+            <h5 class="card-title">Smartphone LG K22+ LMK200BAW 64GB</h5>
             <ul class="list-unstyled mt-3 mb-4">
-              <li class="list-group-item text-uppercase">Color</li>
-              <li class="list-group-item">Caracteristicas</li>
+              <li class="list-group-item">Color: Gris/Titanio</li>
+              <li class="list-group-item">Ram: 3GB</li>
               <li class="list-group-item">Precio</li>
             </ul>
             <a href="#" class="btn btn-primary">Comprar</a>
           </div>
-        </div> <!-- .card -->
-
+        </div>
+        <!-- Elemento 2 -->
         <div class="card col-3 m-3 shadow-sm">
-          <img src="/img/dell.jpg" class="card-img-top" alt="...">
+          <img src="/img/LG-K52.webp" class="card-img-top" alt="Smartphone LG K52">
           <div class="card-body">
-            <h5 class="card-title text-uppercase">Dell</h5>
+            <h5 class="card-title">Smartphone LG K52 Octa-Core 64GB</h5>
             <ul class="list-unstyled mt-3 mb-4">
-              <li class="list-group-item text-uppercase">Color</li>
-              <li class="list-group-item">Caracteristicas</li>
+              <li class="list-group-item">Color: Gris</li>
+              <li class="list-group-item">Ram: 3GB</li>
               <li class="list-group-item">Precio</li>
             </ul>
             <a href="#" class="btn btn-primary">Comprar</a>
           </div>
-        </div> <!-- .card -->
-
+        </div>
+        <!-- Elemento 3 -->
         <div class="card col-3 m-3 shadow-sm">
-          <img src="/img/hp.jpg" class="card-img-top" alt="...">
+          <img src="/img/LG-K62plus.webp" class="card-img-top" alt="Smartphone LG K62+">
           <div class="card-body">
-            <h5 class="card-title text-uppercase">Hp</h5>
+            <h5 class="card-title">Smartphone LG K62+ 128GB</h5>
             <ul class="list-unstyled mt-3 mb-4">
-              <li class="list-group-item text-uppercase">Color</li>
-              <li class="list-group-item">Caracteristicas</li>
+              <li class="list-group-item">Color: Blanco</li>
+              <li class="list-group-item">Ram: 4GB</li>
               <li class="list-group-item">Precio</li>
             </ul>
             <a href="#" class="btn btn-primary">Comprar</a>
           </div>
-        </div> <!-- .card -->
+        </div>
 
+        <hr>
+        <!-- Celulares Asus -->
+        <!-- Elemento 1 -->
+        <div class="card col-3 m-3 shadow-sm">
+          <img src="/img/Asus-ZB631.webp" class="card-img-top" alt="Smartphone Asus ZB631">
+          <div class="card-body">
+            <h5 class="card-title">Celular Asus ZB631 64gb</h5>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li class="list-group-item">Color: Negro</li>
+              <li class="list-group-item">Ram: 6GB</li>
+              <li class="list-group-item">Precio</li>
+            </ul>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+        <!-- Elemento 2 -->
+        <div class="card col-3 m-3 shadow-sm">
+          <img src="/img/Asus-Zenfone.webp" class="card-img-top" alt="Smartphone Asus Zenfone">
+          <div class="card-body">
+            <h5 class="card-title">Smartphone Asus Zenfone 8 5G 128GB</h5>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li class="list-group-item">Color: Negro</li>
+              <li class="list-group-item">Ram: 8GB</li>
+              <li class="list-group-item">Precio</li>
+            </ul>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+        <!-- Elemento 3 -->
+        <div class="card col-3 m-3 shadow-sm">
+          <img src="/img/Asus-Zenfone3.png" class="card-img-top" alt="Smartphone Asus Zenfone 3">
+          <div class="card-body">
+            <h5 class="card-title">Asus ZenFone 3 Max ZC520TL Dual SIM 32 GB</h5>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li class="list-group-item">Color: Gris</li>
+              <li class="list-group-item">Ram: 3GB</li>
+              <li class="list-group-item">Precio</li>
+            </ul>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
         
 
       </section>
