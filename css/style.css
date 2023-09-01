@@ -61,3 +61,22 @@ h2{
     margin-left: auto;
     margin-right: auto;
 }
+.estiloletra{
+    font-size: 30px;
+    font-family: 'Black Ops One', cursive;
+}
+
+.imagenredondeada{
+    border-radius: 20px;
+    display: block;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    align-self: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
