@@ -32,6 +32,7 @@ h2{
 
 
 .shopitem{
+    width: 70%;
     border-radius: 20px;
     display: block;
     margin-top: 30px;
@@ -46,6 +47,17 @@ h2{
 
 .precio{
     color: green;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
+}
+
+.articulo{
+    font-size: medium;
+}
+
+.pago{
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
